@@ -56,6 +56,7 @@
         // User already follows given username,
         // or user already has full list
         if (follows(name) || fCount >= maxfCount) return false;
+        if (getName().equals(name)) return false;
         follows[fCount] = name;
         fCount++;
         return true;
