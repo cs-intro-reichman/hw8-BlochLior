@@ -36,7 +36,6 @@ public class Network {
      *  If there is no such user, returns null.
      *  Notice that the method receives a String, and returns a User object. */
     public User getUser(String name) {
-        if (userCount == 0) return null;
         for (int i = 0; i < getUserCount() - 1; i++) {
             User currentUser = users[i];
             if (currentUser.getName().equals(name)) return currentUser;
